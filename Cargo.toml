@@ -3,8 +3,10 @@ name = "ccs811"
 version = "0.1.0"
 authors = ["Thomas Schlage <t.schlage@gmx.net>"]
 edition = "2018"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+license = "GNU General Public License v3.0"
+description = "A library to use the CCS811 air quality sensor on raspberry pi"
+repository = "https://github.com/fragsalat/rust-ccs811"
+documentation = "https://docs.rs/ccs811"
 
 [dependencies]
 rppal = "0.11.3"
