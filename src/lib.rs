@@ -2,8 +2,8 @@ use rppal::i2c::I2c;
 use rppal::gpio::Pin;
 use crate::chip::CCS811;
 
-mod chip;
 mod constants;
+pub mod chip;
 
 pub use crate::constants::Ccs811Mode as MODE;
 
