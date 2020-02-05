@@ -118,7 +118,7 @@ impl CCS811 {
         self.reset()
             .and(self.check_hw_id())
             .and(self.app_start())
-            .and(self.check_status(CCS811_STATUS_APP_MODE & CCS811_STATUS_APP_VERIFY))?;
+            .and(self.check_status(CCS811_STATUS_APP_MODE | CCS811_STATUS_APP_VERIFY))?;
 
         self.sleep();
 
